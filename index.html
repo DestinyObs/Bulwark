@@ -51,7 +51,7 @@
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
+    <header id="home-section" class="header">
             <div class="row">
                 <div class="col-md-6">
                     <div class="header__logo">
@@ -65,8 +65,8 @@
                     <nav class="header__menu">
                         <ul class="ul">
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Vision & Mission</a></li>
+                            <li><a href="#about-section" onclick="smoothScroll('#about-section')">About</a></li>
+                            <li><a href="#mission-section"  onclick="smoothScroll('#mission-section')">Vision & Mission</a></li>
                             <li><a href="">Contact Us</a></li>
                         </ul>
                     </nav>
@@ -86,17 +86,6 @@
                                 <br>brighter future for underprivileged individuals</p>
                             <button class="btn-group-lg">About Us</button>
                     </div>
-                    <!-- &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp; -->
                     <div class="col-md-3 main-2">
                         <img  class='img1' src="/img/Rectangle 12.svg" alt=""/>
                         <img  class='img2' src="/img/Rectangle 11.svg" alt="">
@@ -107,7 +96,7 @@
             </div>
     
      <!-- Header Section End -->
-     <div class="jumbotron jump-2" style="background: white; color: black;">
+     <div id="about-section" class="jumbotron jump-2" style="background: white; color: black;">
         <div class="row" style=" display: flex; flex-direction: row;">
             <div class="col-md-12" style="text-align: center; font-weight: bold;font-size: 32px; letter-spacing: -0.96px;">
                 <h2><b>About Us</b></h2>
@@ -128,7 +117,7 @@
         </div>
         
     </div>
-    <div class="jumbotron jump-1" style="background: none; color: black; margin-top: -60px;">
+    <div id="mission-section" class="jumbotron jump-1" style="background: none; color: black; margin-top: -60px;">
         <div class="row" style=" display: flex; flex-direction: row;">
             <div class="col-md-12" style="text-align: center; font-weight: bold;font-size: 32px; letter-spacing: -0.96px;">
 
@@ -262,10 +251,10 @@
             
             <div class="col-lg-6" style="color: white; margin-left: -100px; text-align: right;">
                 <a>Quick links: &nbsp;&nbsp;</a>
-                <a style="color: white;" href="./About.html">Home</a>&nbsp;&nbsp;
-                <a style="color: white;" href="./shop.html">About</a>&nbsp;&nbsp;
-                <a style="color: white;"  href="./contact.html">Mission & Vision</a>&nbsp;&nbsp;
-                <a style="color: white;" href="./faq/html">Contact Us</a>
+                <a style="color: white;" href="./index.html">Home</a>&nbsp;&nbsp;
+                <a style="color: white;" href="#about-section" onclick="smoothScroll('#about-section')">About</a>&nbsp;&nbsp;
+                <a style="color: white;" href="#mission-section" onclick="smoothScroll('#mission-section')">Mission & Vision</a>&nbsp;&nbsp;
+                <a style="color: white;" href="#">Contact Us</a>
                 
                 <div class="footer__copyright__text" style="margin-top: 20px;">
                     <p> &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved &nbsp;&nbsp;&nbsp;&nbsp;  Terms & Conditions &nbsp;&nbsp;&nbsp;&nbsp; Privay Policies &nbsp;&nbsp;&nbsp;&nbsp;08032171262 & 07038258435</p>
@@ -288,6 +277,14 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    function smoothScroll(target) {
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000); // Adjust the duration (in milliseconds) as per your preference
+    }
+    </script>
+    
 </body>
 
 </html>
