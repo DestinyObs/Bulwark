@@ -1114,6 +1114,10 @@ ol {
 	.header{
 		background-color: #F4E7CF;
 	}
+	
+	.jump-1{
+		margin-top: 5000px;
+	}
 
 	.header img{
 		margin-left: 20px;
@@ -1134,7 +1138,30 @@ ol {
 		margin-top: -110px;
 	}
 
-	.abt{
+	.abt p{
+		margin-left:  -150px;
+	}
+
+	.abt-1 p{
+		margin: 10000px;
+	}
+	.abt h3{
+		margin-left:  -150px;
+	}
+	.abt-img img{
+		width: 100%;
+	}
+	.abt-img4 img{
+		margin-left: -150px;
+		width: 165%;
+	}
+
+	.abt-img4 h2{
+			position: absolute;
+			top: 50%;
+			left: 20%;
+			transform: translate(-50%, -50%);
+			color: white;
 	}
 	.img1{
 		position: absolute;
