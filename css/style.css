@@ -502,7 +502,6 @@ ol {
 	color: white;
 	font-weight: 400;
 	padding: 8px 20px;
-	text-transform: capitalize;
 }
 
 .header__menu ul li .dropdown li a:after {
@@ -511,7 +510,6 @@ ol {
 
 .header__menu ul li a {
 	font-size: 15px;
-	text-transform: uppercase;
 	color: white;
 	font-weight: 500;
 	display: block;
