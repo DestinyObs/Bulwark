@@ -203,36 +203,6 @@ img {
     border-radius: 15px;
 }
 
-/* 
-
-.grid-wrapper div > img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 5px;
-}
-
-.grid-wrapper {
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	grid-auto-rows: 200px;
-	grid-auto-flow: dense;
-}
-.grid-wrapper .wide {
-	grid-column: span 2;
-}
-.grid-wrapper .tall {
-	grid-row: span 1;
-}
-.grid-wrapper .taller {
-	grid-row: span 2;
-}
-.grid-wrapper .big {
-	grid-column: span 2;
-	grid-row: span 2;
-} */
-
 h1,
 h2,
 h3,
@@ -926,9 +896,62 @@ ol {
 
 /* Tablet Device = 768px */
 
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+	.list{
+		margin-left: 3px;
+	}
+
+	.list .circle{
+		width: 0px;
+		height: 0px;
+	}
+
+.footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+  }
+  
+  .footer-left {
+	margin-left: 140px;
+	align-items: center;
+  }
+  
+  .footer-logo {
+	width: 200px; /* Adjust the size as needed */
+  }
+  
+  .address {
+	margin-top: 10px;
+  }
+  
+  .footer-right {
+	align-items: center;
+	margin-left: 200px;
+  }
+  
+  .quick-links {
+	margin-bottom: 10px;
+  }
+  
+  .copy-rights {
+	align-items: center;
+  }
+  
+  .copy-rights span {
+	white-space: nowrap;
+  }
+  
+  .phone-numbers {
+	white-space: nowrap;
+  }
+  
 	.filter__controls li {
 		margin-right: 15px;
 	}
@@ -961,6 +984,12 @@ ol {
 		margin-top: 30px;
 	}
 
+	.abt3 p {
+		width: 100%;
+		margin-left: -150px;
+		margin-top: -70px;
+	}
+
 	.abt p{
 		width: 320px;
 	}
@@ -968,6 +997,51 @@ ol {
 	.abt-img img{
 		margin-left: 90px; /*ejrjrr*/
 		margin-top: 90px;
+	}
+
+	
+
+	
+	.abt-img img{
+		width: 100%;
+	}
+	.abt-img4 img{
+		margin-left: -150px;
+		margin-top: 150px;
+		width: 100%;
+	}
+	.abt-img3 img{
+		margin-left: 16px;
+		/* width: 90%; */
+		/* margin-top: -570px; */
+	}
+	.abt-img4 h2{
+			position: absolute;
+			top: 50%;
+			left: 10%;
+			transform: translate(-50%, -50%);
+			color: white;
+	}
+
+	.abt-img3 h2{
+		left: 230%;
+		top: -420%;
+	}
+	.list{
+		margin-left: 25px;
+	}
+
+	.abt-img3 img{
+		width: 290px;
+		margin-top: -250px;
+		margin-left: 400px;
+	}
+	.abt-1 p{
+		width: 290px;
+
+	}
+	.abt-img3 h2{
+		/* margin-top: -263px; */
 	}
 
 .img1{
@@ -1554,6 +1628,8 @@ ol {
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
+
+	
 	
 	.discount__text {
 		padding: 75px 0px 50px;
